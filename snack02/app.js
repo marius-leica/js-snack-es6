@@ -16,8 +16,10 @@ const squadre = [
   { nome: "Milan", puntiFatti: 0, falliSubiti: 0 },
   { nome: "Napoli", puntiFatti: 0, falliSubiti: 0 },
 ];
+
 //Generare numeri random al posto degli 0 nelle proprietà:
 //Punti fatti e falli subiti.
+
 for (let i = 0; i < squadre.length; i++) {
   const puntiFatti = Math.floor(Math.random() * 100);
   const falliSubiti = Math.floor(Math.random() * 100);
@@ -25,6 +27,7 @@ for (let i = 0; i < squadre.length; i++) {
   squadre[i].falliSubiti = falliSubiti;
 }
 console.table(squadre);
+
 //Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
 for (let i = 0; i < squadre.length; i++) {
