@@ -19,7 +19,22 @@ console.table(nuovoArray);
 // filter
 const nuovoArray2 = myArray.filter(function (element, index) {
   if (index >= 2 && index <= 4) {
-    return element; //DIFFICOLTA' A FAR STAMPARE ANCHE L'INDICE
+    return true;
   }
 });
 console.table(nuovoArray2);
+
+// se volessimo stampare anche l'indice bisogna clonare con map l'array originale
+/* const nuovoArrayFilter = myArray.filter(
+  (guest, i) => i >= numMin && i <= numMax
+);
+
+console.log(nuovoArrayFilter);
+
+const listaConIndici = myArray
+  .map((guest, i) => ({ nome: guest, posizione: i }))
+  .filter((guest, i) => i >= numMin && i <= numMax);
+
+console.log(listaConIndici);
+
+*/

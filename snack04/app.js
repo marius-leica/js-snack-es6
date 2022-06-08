@@ -28,6 +28,8 @@ let students = [
 const studenti = students.map((studente) => {
   return studente.name.toUpperCase();
 });
+// se volessimo restringerla di più
+//const studenti = students.map((studente) =>   return studente.name.toUpperCase();
 console.log(studenti);
 
 //2-  Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70
